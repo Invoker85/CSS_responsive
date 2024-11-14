@@ -308,7 +308,7 @@ img {
 }
 
 .home__blob-img {
-   width: 170px;
+   width: 200px;
 }
 
 .home__data {
@@ -414,7 +414,7 @@ img {
    width: 200px;
    border-radius: 0.5rem;
    justify-self: center;
-   align-self: center;
+   align-self: start;
 }
 
 .about__description {
