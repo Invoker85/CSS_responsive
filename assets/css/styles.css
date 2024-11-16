@@ -519,22 +519,22 @@ img {
    background-color: var(--first-color);
 }
 
-/* ===== frontend ===== */
+/* ===== Data Analytics & Optimization ===== */
 .skills__html{
-   width: 90%;
-}
-
-.skills__css{
-   width: 80%;
-}
-.skills__js{
-   width: 60%;
-}
-.skills__react{
    width: 85%;
 }
 
-/* ===== backend ===== */
+.skills__css{
+   width: 75%;
+}
+.skills__js{
+   width: 90%;
+}
+.skills__react{
+   width: 65%;
+}
+
+/* ===== Industrial & Automation Tools ===== */
 .skills__php{
    width: 80%;
 }
@@ -543,21 +543,21 @@ img {
    width: 70%;
 }
 .skills__firebase{
-   width: 90%;
+   width: 75%;
 }
 .skills__python{
-   width: 55%;
+   width: 85%;
 }
 
-/* ===== frontend ===== */
+/* ===== Programming & Web Dev. ===== */
 .skills__figma{
-   width: 90%;
+   width: 30%;
 }
 .skills__sketch{
-   width: 85%;
+   width: 25%;
 }
 .skills__photoshop{
-   width: 85%;
+   width: 45%;
 }
 
 .skills__close .skills__list{
