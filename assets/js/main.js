@@ -213,3 +213,22 @@ themeButton.addEventListener('click', () => {
    localStorage.setItem('selected-icon', getCurrentIcon())
 
 })
+
+// EmailJS filofitt initialisieren
+emailjs.init("c6a6M3it6t1BmbEms");
+
+// Formular-Auslöser
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+   event.preventDefault(); // Verhindere die Standardaktion (Seiten-Reload)
+
+   const serviceID = "service_att3p57"; // Ersetze mit Deiner Service ID
+   const templateID = "template_wmiaa9j"; // Ersetze mit Deiner Template ID
+
+   emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+         alert("Nachricht erfolgreich gesendet!");
+         document.getElementById("contact-form").reset(); // Formular leeren
+      }, (error) => {
+         alert("Fehler beim Senden der Nachricht: " + error.text);
+      });
+});

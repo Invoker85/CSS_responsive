@@ -530,9 +530,9 @@
                   </div>
 
                <!--==================== QUALIFICATION CONTENT 2 ====================-->
-<div class="qualification__content" data-content id="work">
-   <!--==================== QUALIFICATION 1 ====================-->
-   <div class="qualification__data">
+      <div class="qualification__content" data-content id="work">
+      <!--==================== QUALIFICATION 1 ====================-->
+      <div class="qualification__data">
       <div>
          <h3 class="qualification__title">Chemical Process Operator</h3>
          <span class="qualification__subtitle">
@@ -547,10 +547,10 @@
          <span class="qualification__rounder"></span>
          <span class="qualification__line"></span>
       </div>
-   </div>
+      </div>
 
-   <!--==================== QUALIFICATION 2 ====================-->
-   <div class="qualification__data">
+      <!--==================== QUALIFICATION 2 ====================-->
+      <div class="qualification__data">
       <div></div>
       <div>
          <span class="qualification__rounder"></span>
@@ -568,10 +568,10 @@
             2013 - 2018
          </div>
       </div>
-   </div>
+      </div>
    
-   <!--==================== QUALIFICATION 3 ====================-->
-   <div class="qualification__data">
+      <!--==================== QUALIFICATION 3 ====================-->
+      <div class="qualification__data">
       <div>
          <h3 class="qualification__title">Sr. Production Coordinator &<br>Leader Utilities</h3>
          <span class="qualification__subtitle">
@@ -586,10 +586,10 @@
          <span class="qualification__rounder"></span>
          <span class="qualification__line"></span>
       </div>
-   </div>
+      </div>
 
-   <!--==================== QUALIFICATION 4 ====================-->
-   <div class="qualification__data right-align">
+      <!--==================== QUALIFICATION 4 ====================-->
+      <div class="qualification__data right-align">
       <div></div>
       <div>
          <span class="qualification__rounder"></span>
@@ -605,8 +605,8 @@
             2024 - Present
          </div>
       </div>
-   </div>
-</div>
+      </div>
+      </div>
 
 
          <!--==================== SERVICES ====================-->
@@ -616,7 +616,7 @@
 
             <div class="services__container container grid">
               <!--==================== SERVICES 1 ====================-->
-<div class="services__content">
+   <div class="services__content">
    <div>
       <i class="uil uil-web-grid services__icon"></i>
       <h3 class="services__title">
@@ -657,8 +657,8 @@
             </li>
          </ul>
       </div>
-   </div>
-</div>
+      </div>
+      </div>
 
                <!--==================== SERVICES 2 ====================-->
                <div class="services__content">
@@ -909,9 +909,9 @@
          </div>
 
          <img src="assets/img/cortes.jpg" alt="Project Image" class="project__img">
+       </div>
       </div>
-   </div>
-</section>
+      </section>
 
 
 
@@ -1022,7 +1022,7 @@
 
                      <div>
                         <h3 class="contact__title">Email</h3>
-                        <span class="contact__subtitle">info@stefan-maximilian.ch</span>
+                        <span class="contact__subtitle"><a href="mailto:info@stefan-maximilian.ch">info@stefan-maximilian.ch</a></span>
                      </div>
                   </div>
 
@@ -1036,41 +1036,34 @@
                   </div>
                </div>
 
-               <form action="" class="contact__form grid">
+               <form id="contact-form" class="contact__form grid">
                   <div class="contact__inputs grid">
                      <div class="contact__content">
-                        <label for="" class="contact__label">Name</label>
-                        <input type="text" class="contact__input">
+                        <label for="user_name" class="contact__label">Name</label>
+                        <input type="text" id="user_name" name="user_name" class="contact__input" required>
                      </div>
                      <div class="contact__content">
-                        <label for="" class="contact__label">Email</label>
-                        <input type="email" class="contact__input">
+                        <label for="user_email" class="contact__label">Email</label>
+                        <input type="email" id="user_email" name="user_email" class="contact__input" required>
                      </div>
                   </div>
-
+               
                   <div class="contact__content">
-                     <label for="" class="contact__label">Project</label>
-                     <input type="email" class="contact__input">
+                     <label for="user_project" class="contact__label">Project</label>
+                     <input type="text" id="user_project" name="user_project" class="contact__input">
                   </div>
-
+               
                   <div class="contact__content">
-                     <label for="" class="contact__label">Email</label>
-                     <input type="email" class="contact__input">
+                     <label for="message" class="contact__label">Message</label>
+                     <textarea id="message" name="message" cols="0" rows="7" class="contact__input" required></textarea>
                   </div>
-
-                  <div class="contact__content">
-                     <label for="" class="contact__label">Message</label>
-                     <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                  </div>
-
+               
                   <div>
-                     <a href="#" class="button button--flex">
+                     <button type="submit" class="button button--flex">
                         Send Message
                         <i class="uil uil-message button__icon"></i>
-                     </a>
+                     </button>
                   </div>
-
-
                </form>
             </div>
          </section>
@@ -1120,6 +1113,7 @@
       <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 
       <!--==================== MAIN JS ====================-->
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
       <script src="assets/js/main.js"></script>
    </body>
 </html>
